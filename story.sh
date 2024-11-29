@@ -57,7 +57,7 @@ case $choice in
 
         # Загрузка Story-Geth binary
         cd $HOME
-        wget https://github.com/piplabs/story-geth/releases/download/v0.10.0/geth-linux-amd64
+        wget https://github.com/piplabs/story-geth/releases/download/v0.10.1/geth-linux-amd64
         [ ! -d "$HOME/go/bin" ] && mkdir -p $HOME/go/bin
         if ! grep -q "$HOME/go/bin" $HOME/.bash_profile; then
           echo "export PATH=$PATH:/usr/local/go/bin:~/go/bin" >> ~/.bash_profile
@@ -71,7 +71,7 @@ case $choice in
         # Загрузка Story binary
         cd $HOME
         rm -rf story-linux-amd64
-        wget https://github.com/piplabs/story/releases/download/v0.12.0/story-linux-amd64
+        wget https://github.com/piplabs/story/releases/download/v0.13.0/story-linux-amd64
         [ ! -d "$HOME/go/bin" ] && mkdir -p $HOME/go/bin
         if ! grep -q "$HOME/go/bin" $HOME/.bash_profile; then
           echo "export PATH=$PATH:/usr/local/go/bin:~/go/bin" >> ~/.bash_profile
